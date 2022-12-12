@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.partnersContainer {
+  padding: 32px 0px;
+}
+.partnersContainer__title {
+  font-weight: 600;
+  font-size: 38px;
+  font-family: "Inter";
+  color: #525A6C;
+  margin-bottom: 40px;
+}
+.partnersContainer__partnersLogo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 72px;
+  padding: 0px 15px;
+}
+.partnersContainer__shoppers {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 77px;
+  background-color: rgba(0, 113, 218, 0.95);
+}
+.partnersContainer .shoppersText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partnersContainer .shoppersText h1 {
+  font-weight: 600;
+  font-size: 38px;
+  font-family: "Inter";
+  color: #525A6C;
+  margin-bottom: 40px;
+}
+.partnersContainer .buttons {
+  display: flex;
+}
+.partnersContainer .buttons button {
+  column-gap: 18px;
+}/*# sourceMappingURL=Partners.css.map */

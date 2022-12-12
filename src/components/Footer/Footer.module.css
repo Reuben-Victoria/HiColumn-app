@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  font-family: "Inter";
+  color: #525A6C;
+  margin-top: 183px;
+}
+.footer a {
+  text-decoration: none;
+  color: #525A6C;
+}
+.footer__footerTop {
+  padding: 0px 122px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 140px;
+}
+.footer__footerTop h1 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.footer__footerTop p {
+  width: 356px;
+}
+.footer__footerTop__left div {
+  width: 30.13px;
+  height: 31.64px;
+  display: inline-block;
+  margin-right: 7.12px;
+  margin-bottom: 38.68px;
+}
+.footer__footerTop__left div img {
+  width: 100%;
+  height: 100%;
+}
+.footer__footerTop__left span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 21.468px;
+  line-height: 25px;
+  color: #0B2253;
+  font-family: "Inter";
+  margin-bottom: 38.68px;
+}
+.footer__footerTop__left p {
+  width: 356px;
+  height: 96px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Inter";
+  color: #0B2253;
+}
+.footer__footerTop ul li, .footer__footerTop ul .footer__footerTop__contacts li a, .footer__footerTop__contacts li .footer__footerTop ul a {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.footer__footerTop__contacts li, .footer__footerTop__contacts li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.footer hr {
+  margin-top: 76px;
+}
+.footer .footerBottom {
+  padding: 38px 122px;
+  border-top-style: 1px solid rgba(11, 34, 83, 0.33);
+}
+.footer .footerBottom p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .footer__footerTop {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 40px;
+    padding: 0 20px;
+    justify-content: left;
+  }
+  .footer__footerTop__left span {
+    font-size: 20px;
+  }
+  .footer__footerTop__left p {
+    font-size: 12px;
+    width: 60%;
+  }
+  .footer .footerBottom {
+    padding: 38px 20px;
+  }
+  .footer .footerBottom p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 960px) and (min-width: 721px) {
+  .footer {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .footer__footerTop {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 40px;
+    padding: 0 50px;
+    justify-content: left;
+  }
+  .footer__footerTop__left span {
+    font-size: 24px;
+  }
+  .footer__footerTop__left p {
+    font-size: 18px;
+    width: 60%;
+  }
+  .footer .footerBottom {
+    padding: 38px 50px;
+  }
+  .footer .footerBottom p {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  .footer {
+    font-family: "Inter";
+    color: #525A6C;
+    margin-top: 163px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #525A6C;
+  }
+  .footer__footerTop {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 120px;
+    padding: 0px 100px;
+  }
+  .footer__footerTop h1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  .footer__footerTop p {
+    width: 100%;
+  }
+  .footer__footerTop__left div {
+    width: 30.13px;
+    height: 29.64px;
+    display: inline-block;
+    margin-right: 7.12px;
+    margin-bottom: 38.68px;
+  }
+  .footer__footerTop__left div img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__footerTop__left span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 21.468px;
+    line-height: 25px;
+    color: #0B2253;
+    font-family: "Inter";
+    margin-bottom: 10px;
+  }
+  .footer__footerTop__left p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Inter";
+    color: #0B2253;
+  }
+  .footer__footerTop ul li, .footer__footerTop ul .footer__footerTop__contacts li a, .footer__footerTop__contacts li .footer__footerTop ul a {
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .footer__footerTop__contacts li, .footer__footerTop__contacts li a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .footer hr {
+    margin-top: 76px;
+  }
+  .footer .footerBottom {
+    padding: 38px 100px;
+    border-top-style: 1px solid rgba(11, 34, 83, 0.33);
+  }
+  .footer .footerBottom p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.merchantContainer {
+  display: flex;
+  padding: 0px 122px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 166px;
+  margin-bottom: 245px;
+  font-family: "Inter";
+}
+.merchantContainer__merchantLeft h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1f6aec;
+  margin-bottom: 14px;
+}
+.merchantContainer__merchantLeft h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  color: #0B2253;
+  width: 412px;
+  margin-bottom: 28px;
+}
+.merchantContainer__merchantLeft p {
+  width: 428px;
+  font-family: "Inter";
+  margin-bottom: 56px;
+  color: #525A6C;
+}
+.merchantContainer__downloadButtons {
+  display: flex;
+}
+.merchantContainer__downloadButtons button {
+  margin-right: 18px;
+}
+.merchantContainer__headerImage {
+  background-image: url("./assets/Rectangle 198.svg");
+  width: 494px;
+  height: 507px;
+  border-radius: 10px;
+  position: relative;
+}
+.merchantContainer__headerImage div {
+  position: absolute;
+  top: 154px;
+  right: 313px;
+}
+
+@media screen and (max-width: 720px) {
+  .merchantContainer {
+    padding: 0 24px;
+    flex-direction: column;
+  }
+  .merchantContainer__merchantLeft h3 {
+    text-align: center;
+  }
+  .merchantContainer__merchantLeft h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .merchantContainer__merchantLeft p {
+    width: 100%;
+    text-align: justify;
+  }
+  .merchantContainer__downloadButtons {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .merchantContainer__downloadButtons button {
+    margin-right: 0;
+  }
+  .merchantContainer__headerImage {
+    width: 354px;
+    height: 407px;
+  }
+  .merchantContainer__headerImage div {
+    width: 80px;
+    height: 80px;
+    top: 215px;
+    right: 286px;
+  }
+}
+@media only screen and (max-width: 960px) and (min-width: 721px) {
+  .merchantContainer {
+    padding: 0 50px;
+    flex-direction: column;
+  }
+  .merchantContainer__merchantLeft h3 {
+    text-align: center;
+  }
+  .merchantContainer__merchantLeft h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .merchantContainer__merchantLeft p {
+    width: 100%;
+    text-align: justify;
+  }
+  .merchantContainer__downloadButtons {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .merchantContainer__downloadButtons button {
+    margin-right: 0;
+  }
+  .merchantContainer__headerImage {
+    width: 453px;
+    height: 507px;
+  }
+  .merchantContainer__headerImage div {
+    top: 180px;
+    right: 210px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  .merchantContainer {
+    padding: 0 100px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .merchantContainer__merchantLeft h3 {
+    text-align: center;
+  }
+  .merchantContainer__merchantLeft h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .merchantContainer__merchantLeft p {
+    width: 100%;
+    text-align: center;
+  }
+  .merchantContainer__downloadButtons {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .merchantContainer__downloadButtons button {
+    margin-right: 0;
+  }
+  .merchantContainer__headerImage {
+    width: 453px;
+    height: 507px;
+  }
+  .merchantContainer__headerImage div {
+    top: 180px;
+    right: 210px;
+  }
+}/*# sourceMappingURL=Merchant.module.css.map */

@@ -1,0 +1,122 @@
+@import '../../Styles/Variables';
+@import '../../Styles/global';
+
+.whiteNavbar {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  padding: 32px 122px;
+  color: $titleColor;
+  background-color: #fff;
+
+  // span{
+  //     font-weight: 700;
+  //     font-size: 17.1744px;
+  //     line-height: 20px;
+  //     font-family: $titleFont;
+  // }
+
+  nav {
+    font-family: $bodyFont;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-left: 56px;
+
+        a {
+          text-decoration: none;
+          color: $titleColor;
+        }
+      }
+    }
+  }
+  i {
+    display: none;
+  }
+}
+.blueNavbar {
+  @extend .whiteNavbar;
+  color: #fff;
+  background-color: $titleColor;
+
+  nav {
+    font-family: $bodyFont;
+    cursor: pointer;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-left: 56px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .whiteNavbar {
+    padding: 24px 20px;
+
+    ul {
+      display: none;
+    }
+    i {
+      display: block;
+    }
+  }
+
+  .blueMenubar {
+    .fa-bars {
+      color: $titleColor;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .whiteNavbar {
+    padding: 24px 50px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  .whiteNavbar {
+    padding: 24px 80px;
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    i {
+      display: none;
+    }
+  }
+}

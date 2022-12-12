@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.whiteNavbar, .blueNavbar {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  padding: 32px 122px;
+  color: #0B2253;
+  background-color: #fff;
+}
+.whiteNavbar nav, .blueNavbar nav {
+  font-family: "Inter";
+  cursor: pointer;
+}
+.whiteNavbar nav ul, .blueNavbar nav ul {
+  list-style: none;
+}
+.whiteNavbar nav ul li, .blueNavbar nav ul li {
+  display: inline;
+  margin-left: 56px;
+}
+.whiteNavbar nav ul li a, .blueNavbar nav ul li a {
+  text-decoration: none;
+  color: #0B2253;
+}
+
+.blueNavbar {
+  color: #fff;
+  background-color: #0B2253;
+}
+.blueNavbar nav {
+  font-family: "Inter";
+  cursor: pointer;
+}
+.blueNavbar nav ul {
+  list-style: none;
+}
+.blueNavbar nav ul li {
+  display: inline;
+  margin-left: 56px;
+}
+.blueNavbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .whiteNavbar, .blueNavbar {
+    padding: 24px 20px;
+  }
+  .whiteNavbar ul, .blueNavbar ul {
+    display: none;
+  }
+  .blueMenubar .fa-bars {
+    color: #0B2253;
+  }
+  .whiteMenubar .fa-bars {
+    color: #fff;
+  }
+  nav ul {
+    display: flex;
+    padding: 0;
+  }
+  nav ul li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

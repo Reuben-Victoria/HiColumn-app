@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.appFeaturesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 122px;
+  background: #D7E4F8;
+}
+.appFeaturesContainer__title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  font-family: "Inter";
+  color: #0B2253;
+  margin-bottom: 15px;
+}
+.appFeaturesContainer__description {
+  margin-bottom: 82px;
+}
+.appFeaturesContainer__featuresContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 304px);
+  column-gap: 32px;
+  row-gap: 64px;
+}
+.appFeaturesContainer__featuresContainer__features {
+  width: 304px;
+}
+.appFeaturesContainer__featuresContainer__features h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+  color: #0B2253;
+}
+.appFeaturesContainer__featuresContainer__features p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+  font-weight: 400;
+  color: #525A6C;
+}
+.appFeaturesContainer__featuresContainer__features__featuresLogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  padding: 16px 12px;
+}
+
+@media screen and (max-width: 720px) {
+  .appFeaturesContainer {
+    padding: 30px 0px 0 0px;
+    flex-direction: column;
+  }
+  .appFeaturesContainer__title {
+    text-align: center;
+  }
+  .appFeaturesContainer__description {
+    width: 100%;
+    text-align: center;
+  }
+  .appFeaturesContainer__featuresContainer {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 30px;
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .appFeaturesContainer__featuresContainer__features {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .appFeaturesContainer__featuresContainer__features h2 {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .appFeaturesContainer__featuresContainer__features p {
+    text-align: justify;
+    padding: 0 20px;
+  }
+  .appFeaturesContainer__featuresContainer__features__featuresLogo {
+    padding: 2px 2px;
+    margin: 0 auto;
+  }
+  .appFeaturesContainer__hand {
+    width: 100%;
+    bottom: 0;
+  }
+  .appFeaturesContainer__hand img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 960px) and (min-width: 721px) {
+  .appFeaturesContainer {
+    padding: 30px 0px 0 0px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .appFeaturesContainer__title {
+    text-align: center;
+  }
+  .appFeaturesContainer__description {
+    width: 100%;
+    text-align: center;
+    padding: 0 50px;
+  }
+  .appFeaturesContainer__featuresContainer {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 30px;
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .appFeaturesContainer__featuresContainer__features {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .appFeaturesContainer__featuresContainer__features h2 {
+    text-align: center;
+  }
+  .appFeaturesContainer__featuresContainer__features p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .appFeaturesContainer__featuresContainer__features__featuresLogo {
+    padding: 2px 2px;
+    margin: 0 auto;
+  }
+  .appFeaturesContainer__hand {
+    width: 100%;
+  }
+  .appFeaturesContainer__hand img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  .appFeaturesContainer {
+    display: flex;
+    padding-left: 80px;
+    background: #D7E4F8;
+  }
+  .appFeaturesContainer__title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    font-family: "Inter";
+    color: #0B2253;
+    margin-bottom: 15px;
+  }
+  .appFeaturesContainer__description {
+    margin-bottom: 82px;
+  }
+  .appFeaturesContainer__featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 32px;
+    row-gap: 24px;
+  }
+  .appFeaturesContainer__featuresContainer__features {
+    width: 100%;
+  }
+  .appFeaturesContainer__featuresContainer__features h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    color: #0B2253;
+  }
+  .appFeaturesContainer__featuresContainer__features p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    font-weight: 400;
+    color: #525A6C;
+  }
+  .appFeaturesContainer__featuresContainer__features__featuresLogo {
+    border-radius: 8px;
+    margin-bottom: 28px;
+    padding: 4px 8px;
+  }
+  .appFeaturesContainer__featuresContainer__hand {
+    width: 80%;
+  }
+  .appFeaturesContainer__featuresContainer__hand img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=AppFeatures.module.css.map */

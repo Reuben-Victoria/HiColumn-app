@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  width: 100%;
+  color: white;
+}
+.btn__blue {
+  background: #1f6aec;
+}
+.btn__green {
+  background: #00cc83;
+}
+.btn:disabled {
+  background-color: rgb(229, 229, 229);
+}/*# sourceMappingURL=Button.module.css.map */

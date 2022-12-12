@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heroContainer {
+  display: flex;
+  padding: 122px 122px;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 155px;
+}
+.heroContainer .downloadButtons {
+  display: flex;
+}
+.heroContainer .downloadButtons button {
+  margin-right: 18px;
+}
+
+.heroLeft h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  color: #0B2253;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 16px;
+  width: 584px;
+}
+.heroLeft p {
+  font-family: "Inter";
+  margin-bottom: 56px;
+  width: 505px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 720px) {
+  .heroContainer {
+    flex-direction: column;
+    padding: 90px 20px 0 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .heroContainer .downloadButtons {
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .heroContainer .downloadButtons button {
+    margin: 0;
+    column-gap: 12px;
+  }
+  .heroLeft h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .heroLeft p {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+  }
+  .header-image {
+    width: 350px;
+  }
+  .header-image img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .heroContainer {
+    flex-direction: column;
+    padding: 141px 50px 0 50px;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .heroContainer .downloadButtons {
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .heroContainer .downloadButtons button {
+    margin: 0;
+    column-gap: 12px;
+  }
+  .heroLeft h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .heroLeft p {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+  }
+  .header-image {
+    width: 60%;
+  }
+  .header-image img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  .heroContainer {
+    display: flex;
+    padding: 151px 100px 0 100px;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    margin-top: 27px;
+    margin-bottom: 90px;
+    width: 100%;
+  }
+  .heroContainer .downloadButtons {
+    display: flex;
+  }
+  .heroContainer .downloadButtons button {
+    margin-right: 18px;
+  }
+  .heroLeft h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0B2253;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 16px;
+    width: 406px;
+  }
+  .heroLeft p {
+    font-family: "Inter";
+    margin-bottom: 56px;
+    width: 505px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .header-image {
+    width: 50%;
+  }
+  .header-image img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=HeroSection.css.map */

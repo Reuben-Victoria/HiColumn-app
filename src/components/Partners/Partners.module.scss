@@ -1,0 +1,238 @@
+@import '../../Styles/Variables';
+@import '../../Styles/global';
+
+.partnersContainer {
+  padding: 32px 0px;
+  margin-top: 120px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 38px;
+    font-family: $bodyFont;
+    color: $bodyFontColor;
+    margin-bottom: 51px;
+    text-align: center;
+  }
+
+  &__partnersLogo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 72px;
+    padding: 0px 15px;
+  }
+
+  &__shoppers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 75px;
+    background-color: transparentize(#0071da, 0.85);
+    align-items: center;
+
+    &__shoppersText {
+      align-items: center;
+      justify-content: center;
+      width: 499px;
+      margin-bottom: 42px;
+      // margin-right: 198px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 38px;
+        font-family: $bodyFont;
+        color: $bodyFontColor;
+        margin-bottom: 40px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $bodyFontColor;
+      }
+    }
+    &__buttons {
+      display: flex;
+
+      Button {
+        margin-right: 18px;
+      }
+    }
+  }
+}
+
+.frame2 {
+  width: 666px;
+  height: 483px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .partnersContainer {
+    padding: 4px 0px;
+    width: 100%;
+    margin-top: 30px;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 40px;
+    }
+
+    &__partnersLogo {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      margin-bottom: 42px;
+    }
+
+    &__shoppers {
+      grid-template-columns: repeat(1, auto);
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 24px;
+
+      &__frame2 {
+        width: 360px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__shoppersText {
+        width: 100%;
+        padding: 18px 20px;
+
+        h1 {
+          font-size: 30px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      &__buttons {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .partnersContainer {
+    padding: 8px 0px;
+    width: 100%;
+    margin-top: 60px;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 40px;
+    }
+
+    &__partnersLogo {
+      margin-bottom: 42px;
+    }
+
+    &__shoppers {
+      width: 100%;
+      //   padding-right: 35px;
+      align-items: center;
+      grid-template-columns: repeat(1, auto);
+      row-gap: 25px;
+      padding-bottom: 24px;
+
+      &__shoppersText {
+        margin: 0 auto;
+        h1 {
+          font-size: 30px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+
+      &__buttons {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width:1400px){
+    .partnersContainer {
+        padding: 8px 0px;
+        width: 100%;
+        margin-top: 60px;
+    
+        &__title {
+          text-align: center;
+          margin-bottom: 30px;
+          margin-top: 40px;
+        }
+    
+        &__partnersLogo {
+          margin-bottom: 42px;
+        }
+    
+        &__shoppers {
+          width: 100%;
+          //   padding-right: 35px;
+          align-items: center;
+          grid-template-columns: repeat(1, auto);
+          row-gap: 25px;
+          padding-bottom: 24px;
+    
+          &__shoppersText {
+            margin: 0 auto;
+            h1 {
+              font-size: 30px;
+              text-align: center;
+              margin-bottom: 10px;
+            }
+    
+            p {
+              text-align: center;
+              width: 100%;
+              margin-bottom: 30px;
+            }
+          }
+    
+          &__buttons {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+    
+            button {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+}
