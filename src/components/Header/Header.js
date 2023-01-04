@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 function Header({ blueHeader }) {
   const [toggle, setToggle] = useState(false);
 
-
   return (
     <header className={blueHeader ? styles.blueNavbar : styles.whiteNavbar}>
       <div>
