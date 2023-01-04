@@ -20,13 +20,14 @@
 }
 .drawer__navbar {
   display: grid;
-  grid-template-columns: 1fr, auto;
-  row-gap: 24px;
+  grid-template-columns: 1, auto;
+  row-gap: 2px;
+  box-sizing: border-box;
   font-size: 24px;
   font-weight: 500;
 }
 .drawer__navbar a {
-  color: #0B2253;
+  color: #0b2253;
 }
 .drawer__sidebar {
   /* Take full height */
@@ -42,6 +43,9 @@
   -webkit-animation-delay: 0.2s;
   animation: slide 0.2s forwards;
   animation-delay: 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   /* Background */
   background-color: #dbe6ec;
 }
@@ -54,4 +58,8 @@
   100% {
     right: 0;
   }
+}
+
+.hideDrawer {
+  display: none;
 }/*# sourceMappingURL=ComponentNavbar.module.css.map */

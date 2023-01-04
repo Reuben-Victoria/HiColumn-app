@@ -8,9 +8,9 @@ import PropTypes from 'prop-types';
 
 function Header({ blueHeader }) {
   const [toggle, setToggle] = useState(false);
-  const handleClick = () => {
-    setToggle(true);
-  };
+
+  console.log('hegdhejdh', toggle);
+
   return (
     <header className={blueHeader ? styles.blueNavbar : styles.whiteNavbar}>
       <div>
@@ -34,10 +34,10 @@ function Header({ blueHeader }) {
       </nav>
 
       <div>
-        <div onClick={handleClick}>
+        <div onClick={() => setToggle(!toggle)}>
           <i className="fa fa-2x fa-bars" aria-hidden="true"></i>
         </div>
-        {toggle && <ComponentNavBar className={toggle ? styles.hideBar : styles.showMenubar} />}
+        {toggle && <ComponentNavBar setToggle={setToggle} toggle={toggle} />}
       </div>
     </header>
   );

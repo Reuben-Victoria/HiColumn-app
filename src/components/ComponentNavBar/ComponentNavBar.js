@@ -1,27 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import close from './close.svg';
 import styles from './ComponentNavbar.module.scss';
-function ComponentNavBar() {
+import PropTypes from 'prop-types';
+function ComponentNavBar({ setToggle, toggle }) {
   return (
-    <div className={styles.drawer}>
+    <div className={toggle ? styles.drawer : styles.hideDrawer}>
       <div className={styles.drawer__overlay}></div>
       <div className={styles.drawer__sidebar}>
         <div className={styles.drawer__navbar}>
-          <a>
+          <p>
             <Link to="/">Home</Link>
-          </a>
-          <a>
+          </p>
+          <p>
             <Link to="/about">About Us</Link>
-          </a>
-          <a>
+          </p>
+          <p>
             <Link to="/contact">Contact Us</Link>
-          </a>
+          </p>
         </div>
-        <div>
-          <iconify-icon icon="pajamas:close" style="color: #0b2253;"></iconify-icon>
+        <div onClick={() => setToggle(!toggle)}>
+          <img src={close} alt="close tag" />
         </div>
       </div>
     </div>
   );
 }
 export default ComponentNavBar;
+
+ComponentNavBar.propTypes = {
+  toggle: PropTypes.bool,
+  setToggle: PropTypes.any
+};
