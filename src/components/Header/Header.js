@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import blueLogo from './assets/logo.svg';
 import whiteLogo from '../../assets/whiteLogo.svg';
 import styles from './Header.module.scss';
+import ComponentNavBar from '../ComponentNavBar/ComponentNavBar';
 import PropTypes from 'prop-types';
 
-function Header({ blueHeader, fontAwesome }) {
-  // const [active, setActive] = useState(null);
+function Header({ blueHeader }) {
+  const [toggle, setToggle] = useState(false);
+  const handleClick = () => {
+    setToggle(true);
+  };
   return (
     <header className={blueHeader ? styles.blueNavbar : styles.whiteNavbar}>
       <div>
@@ -30,9 +34,10 @@ function Header({ blueHeader, fontAwesome }) {
       </nav>
 
       <div>
-        <div className={fontAwesome ? styles.blueMenubar : styles.whiteMenubar}>
+        <div onClick={handleClick}>
           <i className="fa fa-2x fa-bars" aria-hidden="true"></i>
         </div>
+        {toggle && <ComponentNavBar className={toggle ? styles.hideBar : styles.showMenubar} />}
       </div>
     </header>
   );

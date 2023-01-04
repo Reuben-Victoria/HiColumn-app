@@ -91,6 +91,9 @@
     margin-bottom: 45px;
     padding: 180px 50px;
   }
+  .aboutUs .about h1 {
+    font-size: 50px;
+  }
   .container {
     grid-template-columns: repeat(1, auto);
     padding: 0 50px;

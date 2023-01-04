@@ -87,7 +87,6 @@
       color: $titleColor;
     }
   }
-
   nav {
     ul {
       display: flex;
@@ -100,6 +99,10 @@
     }
   }
 }
+.showMenuBar{
+  display: none;
+}
+
 @media only screen and (min-width: 721px) and (max-width: 960px) {
   .whiteNavbar {
     padding: 24px 50px;

@@ -19,6 +19,9 @@
 .whiteNavbar nav, .blueNavbar nav {
   font-family: "Inter";
   cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 .whiteNavbar nav ul, .blueNavbar nav ul {
   list-style: none;
@@ -30,6 +33,9 @@
 .whiteNavbar nav ul li a, .blueNavbar nav ul li a {
   text-decoration: none;
   color: #0B2253;
+}
+.whiteNavbar i, .blueNavbar i {
+  display: none;
 }
 
 .blueNavbar {
@@ -59,11 +65,11 @@
   .whiteNavbar ul, .blueNavbar ul {
     display: none;
   }
+  .whiteNavbar i, .blueNavbar i {
+    display: block;
+  }
   .blueMenubar .fa-bars {
     color: #0B2253;
-  }
-  .whiteMenubar .fa-bars {
-    color: #fff;
   }
   nav ul {
     display: flex;
@@ -72,5 +78,27 @@
   nav ul li {
     list-style-type: none;
     margin: 0 1rem;
+  }
+}
+.showMenuBar {
+  display: none;
+}
+
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .whiteNavbar, .blueNavbar {
+    padding: 24px 50px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  .whiteNavbar, .blueNavbar {
+    padding: 24px 80px;
+  }
+  .whiteNavbar nav, .blueNavbar nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .whiteNavbar i, .blueNavbar i {
+    display: none;
   }
 }/*# sourceMappingURL=Header.module.css.map */

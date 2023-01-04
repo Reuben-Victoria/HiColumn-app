@@ -153,7 +153,7 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     column-gap: 120px;
-    padding: 0px 100px;
+    padding: 0px 80px;
   }
   .footer__footerTop h1 {
     font-weight: 700;
@@ -209,7 +209,7 @@
     margin-top: 76px;
   }
   .footer .footerBottom {
-    padding: 38px 100px;
+    padding: 38px 80px;
     border-top-style: 1px solid rgba(11, 34, 83, 0.33);
   }
   .footer .footerBottom p {
