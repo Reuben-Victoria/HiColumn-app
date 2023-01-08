@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function ComponentNavBar({ setToggle, toggle }) {
   return (
     <div className={toggle ? styles.drawer : styles.hideDrawer}>
-      <div className={styles.drawer__overlay}></div>
+      <div className={styles.drawer__overlay} onClick={() => setToggle(!toggle)}></div>
       <div className={styles.drawer__sidebar}>
         <div className={styles.drawer__navbar}>
           <p>
